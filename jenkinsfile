@@ -125,7 +125,7 @@ pipeline {
                     alwaysLinkToLastBuild: true, 
                     keepAll: true, 
                     reportDir: 'apiTests/reports', 
-                    reportFiles: 'API_ENPOINT1_report.html', 
+                    reportFiles: 'OL-API-TESTS_report.html', 
                     reportName: 'API tests report', 
                     reportTitles: ''])
 
@@ -142,7 +142,7 @@ pipeline {
                 echo 'Reporting junit...'
                 realtimeJUnit(
                     allowEmptyResults: true, 
-                    testResults: 'apiTests/reports/API_ENPOINT1_report.xml') {}
+                    testResults: 'apiTests/reports/OL-API-TESTS_report.xml') {}
 
             }
         }
